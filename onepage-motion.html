@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Page</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+          integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
+          integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous"/>
+
+<!-- jd slider -->
+<link rel="stylesheet" type="text/css" href="css/jd-slider.css"/>
+<script src="./js/jquery.js"></script>
+<script src="./js/jquery.jdSlider-latest.min.js"></script>
+<!-- fancy box -->
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css"/>
+<script src="./js/jquery.fancybox.min.js"></script>
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 로보토 폰트 -->
+    <!-- 외부 스타일 가장 최선으로 적용 시킴 링크하고 적용하는게 국룰  -->
+
+<!-- <style>
+    /* a{font-family: 'Roboto', sans-serif; font-weight: 700;} 내부 css 적용 */
+</style> -->
+
+  </head>
+  <body>
+    <!-- 스타일 내부 적용 <img src="" style="width: 300px; height: 100px;"> -->
+    <div id="wrap">
+      <header>
+        <div class="utility-menu">
+          <!-- 순서가 있는건 ol , 없는건 ul -->
+          <ul>
+            <li><a href="#" class="search" title="search">search</a></li>
+            <li><a href="#" class="myinfo" title="myinfo">myinfo</a></li>
+            <li><a href="#" class="setting" title="setting">setting</a></li>
+            <li><a href="#" class="logout" title="logout">logout</a></li>
+          </ul>
+        </div>
+
+        <div class="top-menu">
+          <h1><a href="#" class="logo">Diet Pizza</a></h1>
+          <ul class="gnb-menu">
+            <li><a href="#" class="active" title="Gmenu1">주문하기</a></li>
+            <li><a href="#" title="Gmenu2">메뉴소개</a></li>
+            <li><a href="#" title="Gmenu3">이벤트</a></li>
+            <li><a href="#" title="Gmenu4">매장안내</a></li>
+            <li><a href="#" title="Gmenu5">프렌차이즈</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <div id="container" class="container">
+        <div class="spot">
+            <section class="jd-slider slider1">
+                <div class="slide-inner">
+                    <ul class="slide-area">
+                        <li>
+                            <a href="#"><img class="spot1" img src="img/spot-img.jpg" alt="image1"/>
+                              <div class="ani-txt">
+                                <h2 class="ani-title">신선한 재료로 만들어지는 건강한 맛</h2>
+                                    <p class="txt-line3">
+                                        저희 다이어트 피자는 타사 제품과 차별화를 두어 재료들을 납품하지 않고 직접 작물을 키워 재배합니다.
+                                    </p>
+                              </a>
+                        </li>
+                        <li>
+                          <a href="#"><img class="spot2" img src="img/spot-img2.jpg" alt="image2"/>
+                            <div class="ani-txt2">
+                              <h2 class="ani-title2">본토의 맛 그대로</h2>
+                                  <p class="txt-line3">
+                                    포르살뤼 치즈를 이용하여 프랑스 파리의 한 골목 식당에<br> 본토의 맛 그대로 살려 체다치즈와 포르살뤼 치즈를 사용해<br> 임실치즈보다 더욱 높은 풍미를 느끼실수 있습니다.
+                                  </p>
+                            </a>
+                        </li>
+                        <li>
+                          <a href="#"><img class="spot3" img src="img/spot-img3.jpg" alt="image3"/>
+                            <div class="ani-txt3">
+                              <h2 class="ani-title3">'겉바속촉'을 도우에 대입시키다.</h2>
+                                  <p class="txt-line3">
+                                    강력분과 중력분의 저희 가게만의 황금비율로 <br> 숙성 및 반죽하여 고열로 예열한 오븐에 초벌하여<br> 제품이 도착해서 식사하실때도 막 구운 피자도우처럼 쫄깃하구 바삭합니다.
+                                  </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-control">
+                    <a class="prev" href="#">
+                        <i class="fas fa-angle-left fa-2x"></i>
+                    </a>
+                    <a class="next" href="#">
+                        <i class="fas fa-angle-right fa-2x"></i>
+                    </a>
+                </div>
+                <div class="controller">
+                    <a class="auto" href="#">
+                        <i class="fas fa-play fa-xs"></i>
+                        <i class="fas fa-pause fa-xs"></i>
+                    </a>
+                    <div class="indicate-area"></div>
+                </div>
+            </section>
+        </div>
+        <div class="section1">
+          <h2 class="title">
+            From Order to Delivery
+          </h2>
+          <p class="desc">
+            저희 가게의 비밀은 주문 즉시 바로 예열돼있는 오븐에 숙성된 반죽을 굽고, 매일마다 피자 커터의 날을 갈아서 정확한 커팅과 <br> 준비된 직원으로 신속한 배달을 하여 갓구운 피자를 드실수 있게 합니다.
+          </p>
+          <div class="content">
+            <div class="itm1">
+              <a href="#" class="itm-ico" title="item-icon">item1</a>
+              <!-- dl , dt dd 는 내용문이 타이틀이 있는 문락 -->
+              <dl>
+                <dt><a href="#">Bake</a></dt>
+                <dd>
+                  360도 이하로 내려가지 않는 화력으로 초벌하여 맛과 향을 풍미있게 만들어줍니다.
+                </dd>
+              </dl>
+            </div>
+
+            <div class="itm2">
+              <a href="#" class="itm-ico" title="item-icon">item2</a>
+              <!-- dl , dt dd 는 내용문이 타이틀이 있는 문락 -->
+              <dl>
+                <dt><a href="#">Cutting</a></dt>
+                <dd>
+                  정확한 8등분으로, 피자 단면을 확인하며 맛있는 시각적 효과를 부여합니다.
+                </dd>
+              </dl>
+            </div>
+
+            <div class="itm3">
+              <a href="#" class="itm-ico" title="item-icon">item3</a>
+              <!-- dl , dt dd 는 내용문이 타이틀이 있는 문락 -->
+              <dl>
+                <dt><a href="#">delivery</a></dt>
+                <dd>
+                  저희 직원의 안전이 우선이며 안전운전을 지키며, 교통법을 위반하지 않습니다.
+                </dd>
+              </dl>
+            </div>
+
+            <div class="itm4">
+              <a href="#" class="itm-ico" title="item-icon">item4</a>
+              <!-- dl , dt dd 는 내용문이 타이틀이 있는 문락 -->
+              <dl>
+                <dt><a href="#">meal</a></dt>
+                <dd>
+                  일회용 수저와 나이프는 환경오염을 생각해, 나무재질로 보내드립니다.
+                </dd>
+              </dl>
+            </div>
+
+          </div><!-- 컨텐트 -->
+        </div> <!-- 섹션 1-->
+
+      <!-- 호버 이미지 4종 -->
+      <div class="section2">
+        <h2 class="title">
+          Review Paper
+        </h2>
+        <p class="desc">
+          여러분의 피자 사진을 올려주세요! 매달 가장 맛있게 찍으신 6분께 총상금 2000만원의 기회를 드립니다!<br>#먹스타그램 #인싸는사진을잘찍어 #총상금2000만원 #다이어트피자
+        </p>
+        <div class="content">
+
+          <div class="card-slide-grp">
+            <div class="card1" id="card1">
+              <a href="#card1" title="card1">
+                <img src="img/card-img1.jpg" alt="card-image1"/>
+                <div class="card-txt">
+                  <div class="card-ico"></div>
+                  <div class="txt-group">
+                    <h4 class="project">Pizza_DuckHoo228</h4>
+                    <h6 class="category">#1등은제것이죠 #콤비네이션</h6>
+                  </div>
+                </div>  
+              </a>
+            </div>
+            <div class="card2" id="card2">
+              <a href="#card1" title="card2">
+                <img src="img/card-img2.jpg" alt="card-image2"/>
+                <div class="card-txt">
+                  <div class="card-ico"></div>
+                  <div class="txt-group">
+                    <h4 class="project">Chanwoo_Mom</h4>
+                    <h6 class="category">#불효자랑와인한잔 #불고기</h6>
+                  </div>
+                </div>  
+              </a>
+            </div>
+            <div class="card3" id="card3">
+              <a href="#card1" title="card3">
+                <img src="img/card-img3.jpg" alt="card-image3"/>
+                <div class="card-txt">
+                  <div class="card-ico"></div>
+                  <div class="txt-group">
+                    <h4 class="project">Castle_Dragon5</h4>
+                    <h6 class="category">#^^ #페페로니</h6>
+                  </div>
+                </div>  
+              </a>
+            </div>
+            <div class="card4" id="card4">
+              <a href="#card1" title="card4">
+                <img src="img/card-img4.jpg" alt="card-image4"/>
+                <div class="card-txt">
+                  <div class="card-ico"></div>
+                  <div class="txt-group">
+                    <h4 class="project">Sseokkoo_0502</h4>
+                    <h6 class="category">#JMTGR #고르곤졸라</h6>
+                  </div>
+                </div>  
+              </a>
+            </div>
+            <div class="card5" id="card5">
+              <a href="#card5" title="card5">
+                <img src="img/card-img5.jpg" alt="card-image5"/>
+                <div class="card-txt">
+                  <div class="card-ico"></div>
+                  <div class="txt-group">
+                    <h4 class="project">CheezKiller222</h4>
+                    <h6 class="category">#나들이엔피자 #페페로니</h6>
+                  </div>
+                </div>  
+              </a>
+            </div>
+            <div class="card6">
+              <a href="#card6" title="card6">
+                <img src="img/card-img6.jpg" alt="card-image6"/>
+                <div class="card-txt">
+                  <div class="card-ico"></div>
+                  <div class="txt-group">
+                    <h4 class="project">Lottesikpoom</h4>
+                    <h6 class="category">#식품관이살아있다 #하와이안</h6>
+                  </div>
+                </div>  
+              </a>
+            </div>
+          </div>
+
+          <div class="btn-control"> <!-- 이전 화면 다음 화면 -->
+            <a href="#" class="btn-prev" title="btn-prev">Prev</a>
+            <a href="#" class="btn-next" title="btn-next">Next</a>
+          </div>
+
+          <div class="controller"> <!-- 밑에 게시글 목록 이동 컨트롤-->
+            <div class="indicate-area">
+              <a href="#card5" title="num1">1</a>
+              <a href="#" class="active" title="num1">2</a>
+              <a href="#" title="num1">3</a>
+            </div>
+          </div>
+
+        </div> <!-- content-->
+      </div> <!-- 섹션 2-->
+
+      <!-- 갤러리 형식 큰 이미지 1개 및 작은 사이즈 3종 -->
+      <div class="section3">
+        <h2 class="title">
+          Best Favorite
+        </h2>
+        <p class="desc">
+          다이어트 피자의 페이스북,인스타그램에서 가장 좋아요 숫자를 받은 게시물들을 확인해보세요!
+        </p>
+        <div class="content">
+          <div class="cont-left"> <!-- css 적용 하기 편안하기 위해 spem 보다 div로 싹다 작업-->
+            <a href="#" class="thumb-lg" title="thumbnail-large">
+            <img src="img/img-lg.jpg" alt="image-large"/>
+            <p class="favorite-group">
+              <span class="favorite">♥</span>
+              <span class="goods">599+</span>
+            </p>
+            </a>
+            <dl>
+              <dt class="title"><a href="#">자연송이 화덕 깻잎피자</a></dt>
+              <dd class="name">Diet Pizza</dd>
+              <dd class="desc txt-line2">직접 재배하는 지리산 산지직송 표고버섯을 토핑으로 올리고 깻잎으로
+                포르살뤼 치즈의 특유 잡내는 제거해주고 맛있는 풍미만 남게 만들어 입에서 느껴지는 신선한 축제를 경험해보세요.
+              </dd>
+            </dl>
+          </div>
+          <div class="cont-right">
+            <div class="thumb-list">
+              <a href="#" class="thumb-md" title="thumbnail-middle-image1">
+                <img src="img/img-md1.jpg" alt="image-middle1"/>
+                <p class="favorite-group">
+                  <span class="favorite">♥</span>
+                  <span class="goods">382+</span>
+                </p>
+                </a>
+                <dl>
+                  <dt class="title"><a href="#" class="txt-line2">포르살뤼 치즈란 무엇일까요?</a></dt>
+                  <dd class="name">Cheez_Mania</dd>
+                  <dd class="desc txt-line3">포트 살루트 (Port Salut)는 프랑스의 페이 드 라 루 아르 (Pays de la Loire)에서
+                     생산되는 반 연질 저온 살균 소 우유 치즈로 독특한 오렌지 껍질과 부드러운 향이 특징입니다.
+                      치즈는 직경이 약 23cm, 무게는 약 2kg 인 바퀴로 생산됩니다.</dd>
+                </dl>
+            </div>
+            <div class="thumb-list">
+              <a href="#" class="thumb-md" title="thumbnail-middle-image2">
+                <img src="img/img-md2.jpg" alt="image-middle2"/>
+                <p class="favorite-group">
+                  <span class="favorite">♥</span>
+                  <span class="goods">297+</span>
+                </p>
+                </a>
+                <dl>
+                  <dt class="title"><a href="#" class="txt-line2">피자 컷팅이 잘되면 맛에 변화가 있을까?</a></dt>
+                  <dd class="name">Sseokkoo</dd>
+                  <dd class="desc txt-line3">깔금한 피자 절단이 맛에 영향을 끼친다고 생각하십니까? 본 글쓴이는 배달온 피자를 먹다 제대로 컷팅이 안돼서
+                    착용하고있던 하의에 쏟는 그런 불상사가 일어났다. 그래서 피자컷팅을 잘하면 어떤 이득점이 있을까 하는 의문점이 드는데
+                  </dd>
+                </dl>
+            </div>
+            <div class="thumb-list">
+              <a href="#" class="thumb-md" title="thumbnail-middle-image3">
+                <img src="img/img-md3.jpg" alt="image-middle3"/>
+                <p class="favorite-group">
+                  <span class="favorite">♥</span>
+                  <span class="goods">213+</span>
+                </p>
+                </a>
+                <dl>
+                  <dt class="title"><a href="#" class="txt-line2">가정에서 사용하는 오븐 추천</a></dt>
+                  <dd class="name">Every_Burn888</dd>
+                  <dd class="desc txt-line3">자고로 오븐이라 함은 조리 기구의 하나. 기구 속에 음식을 넣고 밀폐하면 밀폐한 공간의 사방에서 보내는 열로 음식이 익는다. 전기 오븐과 가스 오븐이 있다.</dd>
+                </dl>
+            </div>
+
+            <button class="btn-more">More</button>
+
+          </div> <!-- cont right-->
+      </div> <!--섹션3 -->
+
+      <footer>
+        <p class="cpr">COPYRIGHT㉿ 2020 Diet Pizza. ALL RIGHTSRESERVED</p>
+        <a href="" onclick="topFunction()" id="topBtn" title="Go to top">TOP</a>
+      </footer>
+
+    </div>
+
+    <script>
+      var topbutton = document.getElementById("topBtn")
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction(){
+        if( document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+          topbutton.style.display = "block";
+        }else{
+          topbutton.style.display = "none";
+        }
+      }
+
+      function topFunction(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+<script>
+    window.onload = function () {
+        $('.slider1').jdSlider({
+            wrap: '.slide-inner',
+            isAuto: true,
+            isLoop: true
+        });  
+    };
+    $('.center').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+})
+
+    </script>
+  </body>
+</html>

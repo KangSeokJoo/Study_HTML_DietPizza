@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+
+#wrap {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+header,
+#container,
+footer {
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+header {
+  background-color: #fff;
+  z-index: 1;
+}
+
+/* Utility-menu */
+.utility-menu {
+  position: relative;
+  height: 34px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  background-color: rgba(0, 0, 0, 0.03);
+}
+.utility-menu ul {
+  position: absolute;
+  right: 0;
+}
+.utility-menu ul li {
+  display: inline-block;
+  float: left;
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+}
+.utility-menu ul li:first-child {
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+.utility-menu ul li a {
+  display: block;
+  width: 33px;
+  height: 34px;
+  background: url("../img/icoSet.png") no-repeat 0 0;
+  text-indent: -999999px;
+  color: transparent;
+  font-size: 0;
+  opacity: 0.5;
+}
+.utility-menu ul li a.ico-search {
+  background-position: 9px 9px;
+}
+.utility-menu ul li a.ico-mypage {
+  background-position: -54px 9px;
+}
+.utility-menu ul li a.ico-setting {
+  background-position: -116px 9px;
+}
+.utility-menu ul li a.ico-logout {
+  background-position: -178px 9px;
+}
+.utility-menu ul li a:hover,
+.utility-menu ul li .ico-search:hover {
+  opacity: 1;
+}
+
+/* Animated Search */
+.utility-menu ul li .ico-search {
+  padding: 7px 27px 6px 5px;
+  background: url(../img/ico-search.png) no-repeat right center;
+  cursor: pointer;
+  opacity: 0.5;
+}
+::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+.animate-input {
+  position: absolute;
+  display: block;
+  border: none;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  width: 33px;
+  box-sizing: border-box;
+  transition: width 0.4s ease-in-out;
+}
+.animate-input:focus {
+  width: 200px !important;
+  height: 34px;
+  border-left: 1px solid #e8e8e8;
+  border-right: 1px solid #e8e8e8;
+  background-color: #fff !important;
+  opacity: 1 !important;
+}
+
+/* Top-menu */
+.top-menu {
+  width: 100%;
+  min-width: 1280px;
+  height: 95px;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.top-menu > div {
+  width: 1280px;
+  margin: 0 auto;
+}
+.top-menu h1 {
+  float: left;
+  margin-left: 10px;
+}
+.top-menu h1 .logo {
+  display: inline-block;
+  width: 255px;
+  height: 70px;
+  background: url("../img/logo.png") no-repeat 0 0;
+  text-indent: -999999px;
+  color: transparent;
+  font-size: 0;
+}
+.gnb-menu {
+  width: 760px;
+}
+.gnb-menu > li {
+  float: left;
+  display: inline-block;
+  height: 95px;
+}
+.gnb-menu > li > a {
+  display: inline-block;
+  height: 63px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "NanumSquare";
+  color: #1f1f1f;
+  line-height: 65px;
+  text-align: center;
+  text-decoration: none;
+}
+.gnb-menu > li > a:hover,
+.gnb-menu > li > a.active {
+  margin: 0 25px;
+  border-bottom: 3px solid #3ba406;
+  color: #3ba406;
+}
+
+/* MENU */
+.menu-container {
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 600px;
+  z-index: 100;
+}
+#menu li {
+  position: relative;
+}
+#menu a {
+  display: block;
+}
+#menu ul.sub-menu {
+  display: none;
+  position: absolute;
+}
+
+/* 1Depth */
+#menu > li {
+  float: left;
+  width: 20%;
+}
+#menu > li > a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* 2Depth */
+#menu > li:hover > ul {
+  display: block;
+  background-color: #fff;
+  margin-top: -95px;
+  padding-top: 110px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#menu > li > ul {
+  top: 100%;
+}
+#menu > li > ul > li {
+  float: left;
+  width: 100%;
+  line-height: 2;
+}
+#menu > li > ul > li:last-child {
+  border-bottom: none;
+}
+#menu > li > ul > li > a {
+  padding: 3px 30px 2px;
+  font-family: Nanum Gothic;
+  font-size: 15px;
+  font-weight: 400;
+  color: #404040;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#menu > li > ul > li > a:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 7px;
+  height: 11px;
+  padding-right: 9px;
+  background: url("../img/icoSet.png") no-repeat -210px -320px;
+  opacity: 0.5;
+}
+#menu > li > ul > li:hover > a:before {
+  background-position: -250px -320px;
+  opacity: 0.75;
+}
+#menu > li > ul > li:hover > a {
+  color: #333;
+  font-weight: 700;
+  text-decoration: none;
+}

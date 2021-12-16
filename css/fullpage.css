@@ -1,0 +1,135 @@
+/* Full Page */
+.fp-section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.fp-slides {
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.fp-section.fp-table {
+  display: block;
+  table-layout: fixed;
+  width: 100%;
+  height: 100vh !important;
+}
+.fp-tableCell {
+  color: #fff;
+}
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  right: 10px;
+  margin-top: -32px !important;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+#fp-nav ul {
+  padding: 0;
+  margin: 0;
+}
+#fp-nav ul li {
+  width: 30px;
+  height: 30px;
+  margin: 14px 0;
+  list-style: none;
+}
+#fp-nav ul li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-decoration: none;
+}
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span {
+  height: 10px;
+  width: 10px;
+  margin: -1px 0 0 -1px;
+  border-radius: 100%;
+  opacity: 1;
+  background: #fff;
+  border: 5px solid transparent;
+}
+#fp-nav ul li a span {
+  position: absolute;
+  z-index: 1;
+  width: 8px;
+  height: 8px;
+  border: 5px solid #5293f4;
+  border-radius: 50%;
+  background: transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0.7;
+}
+#fp-nav ul li:hover a span {
+  width: 10px;
+  height: 10px;
+  margin: -1px 0 0 -1px;
+  opacity: 1;
+  background: red;
+  border: 5px solid transparent;
+}
+#fp-nav ul li .fp-tooltip {
+  display: inline-block;
+  opacity: 0;
+  width: 0;
+  white-space: nowrap;
+}
+#fp-nav ul li:hover .fp-tooltip {
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  opacity: 1;
+}
+#fp-nav ul li:hover .fp-tooltip.right {
+  position: relative;
+  top: -27px;
+  right: 120px;
+  width: 100px;
+  padding: 4px 8px 2px;
+  border-radius: 2px;
+  background: #333;
+  text-align: center;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+#fp-nav ul li:hover .fp-tooltip.right::after,
+.right li:hover .fp-tooltip.right::before {
+  content: " ";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  height: 0;
+  width: 0;
+  border: 1px solid transparent;
+  pointer-events: none;
+}
+#fp-nav ul li:hover .fp-tooltip.right::after {
+  margin-top: -5px;
+  border-left-color: #333;
+  border-width: 5px;
+}
+#fp-nav ul li:hover .fp-tooltip.right::before {
+  border-left-color: #333;
+  border-width: 5px;
+  margin-top: -5px;
+}
+#fp-nav ul li .fp-tooltip.right {
+  right: 30px;
+}

@@ -1,0 +1,724 @@
+@charset "utf-8";
+/* css document */
+
+#wrap {
+  overflow: hidden;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+/* 안에 있는 내용물을 하나로 감싸는 역할 내용물 벗어나면 가려줌 */
+
+header,
+#container,
+footer {
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #fff;
+  z-index: 1;
+}
+
+/* Top-menu */
+.top-menu {
+  width: 100%;
+  min-width: 1280px;
+  height: 95px;
+  background: linear-gradient(
+    to right,
+    beige,
+    aliceblue,
+    antiquewhite,
+    bisque
+  ); /*antiquewhite , aliceblue, beige , bisque , blanchedalmond , burlywood, gold*/
+  border-bottom: 1px solid rgba(134, 134, 134, 0.4);
+}
+.top-menu > div {
+  width: 1280px;
+  margin: 0 auto;
+}
+.top-menu h1 {
+  float: left;
+  margin-left: 10px;
+}
+.top-menu h1 .logo {
+  display: inline-block;
+  width: 255px;
+  height: 70px;
+  background: url("../img/logo.png") no-repeat 0 0;
+  text-indent: -999999px;
+  color: transparent;
+  font-size: 0;
+  margin-top: 15px;
+}
+.gnb-menu {
+  width: 760px;
+}
+.gnb-menu > li {
+  float: left;
+  display: inline-block;
+  height: 95px;
+}
+.gnb-menu > li > a {
+  display: inline-block;
+  height: 57px;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: "NanumSquare";
+  color: rgb(77, 146, 224);
+  text-align: center;
+  text-decoration: none;
+}
+.gnb-menu > li > .menu1 {
+  color: #ff2828;
+}
+.gnb-menu > li > a:hover,
+.gnb-menu > li > a.active {
+  margin: 0 25px;
+  border-bottom: 3px solid #ff2828;
+  color: #ff2828;
+}
+
+#floatMenu {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: 50px;
+  top: 250px;
+  background-color: #fff;
+  color: #1a6fee;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+  opacity: 0.4;
+}
+#floatMenu:hover {
+  opacity: 1;
+}
+.order-btn {
+  font-family: "NotoSansKR";
+  margin-left: 250px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 5px;
+  background: #ff2828;
+  text-decoration: none;
+}
+.order-text {
+  margin-top: 40px;
+  font-size: 20px;
+  font-family: "NotoSansKR";
+  color: #1a6fee;
+}
+.order-type {
+  opacity: 0.5;
+}
+.order-type:hover {
+  opacity: 1;
+}
+.order-type-act:active {
+  width: 70px;
+  height: 50px;
+  border: 1px solid #ff2828;
+}
+
+/* border-bottom: 3px solid #ff2828;
+color: #ff2828; */
+/* Menu */
+.menu-container {
+  display: block;
+  position: absolute;
+  top: 35px;
+  left: 600px;
+  z-index: 100;
+}
+#menu li {
+  position: relative;
+}
+#menu a {
+  display: block;
+}
+#menu ul.sub-menu {
+  display: none;
+  position: absolute;
+}
+
+/* 1Depth */
+#menu > li {
+  float: left;
+  width: 20%;
+}
+#menu > li > a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* 2Depth */
+#menu > li:hover > ul {
+  display: inline-block;
+  width: 150px;
+  background-color: #fff;
+  margin-top: -95px;
+  padding-top: 80px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+#menu > li > ul {
+  top: 100%;
+}
+#menu > li > ul > li {
+  float: left;
+  width: 100%;
+  line-height: 2;
+}
+#menu > li > ul > li:last-child {
+  border-bottom: none;
+}
+#menu > li > ul > li > a {
+  padding: 3px 30px 2px;
+  font-family: Nanum Gothic;
+  font-size: 12px;
+  font-weight: 400;
+  color: #404040;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#menu > li > ul > li > a:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 7px;
+  height: 11px;
+  padding-right: 9px;
+  background: url("../img/icoSet.png") no-repeat -191px -322px;
+  opacity: 0.5;
+}
+#menu > li > ul > li:hover > a:before {
+  background-position: -211px -322px;
+  opacity: 0.75;
+}
+#menu > li > ul > li:hover > a {
+  color: #333;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.spot {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-color: #ebf3fff8;
+  /* background: url(../img/spot-img.jpg); */
+}
+.spot .slider1 img {
+  display: block;
+  transform: translateY(-17%);
+}
+.spot .slider1 .slide-inner {
+  overflow: hidden;
+  height: calc(100vh - 131px) !important;
+}
+.spot a {
+  text-decoration: none;
+}
+.spot .jd-slider .controller {
+  bottom: 160px;
+}
+
+.ani-txt {
+  position: absolute;
+  padding-top: 50px;
+  padding-left: 120px;
+  top: 70px;
+  width: 570px;
+  font-family: "NotoSansKR";
+  color: #fff;
+  text-decoration: none;
+}
+.ani-title {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: none;
+  color: ivory;
+}
+.ani-txt p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #fff;
+  text-decoration: none;
+}
+.ani-txt2 p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: "Roboto";
+  color: #fff;
+  text-decoration: none;
+}
+
+.ani-txt2 {
+  position: absolute;
+  top: 70px;
+  width: 500px;
+  padding-top: 50px;
+  padding-left: 100px;
+  font-family: "NotoSansKR";
+  color: #fff;
+  text-decoration: none;
+}
+.ani-title2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: none;
+  color: ivory;
+}
+
+.ani-txt3 {
+  position: absolute;
+  top: 70px;
+  width: 570px;
+  margin-top: 250px;
+  margin-left: 100px;
+  font-family: "NotoSansKR";
+  color: #fff;
+  text-decoration: none;
+}
+.ani-title3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: none;
+  color: ivory;
+}
+.ani-txt3 p {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: "Roboto";
+  font-weight: 600;
+  color: rgb(203, 255, 119);
+  text-decoration: none;
+}
+.btn1-control {
+  top: 50%;
+}
+/* Common */
+h2.title {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 40px;
+  margin-bottom: 25px;
+  padding: 40px 100px 0;
+  color: #202020;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Roboto";
+  border-bottom: 2px solid #ededed;
+  display: inline-block;
+} /*페딩 순서 top right bottom left , 글씨가 가운데로 text-align 안돼기에 포지션,레프트,트렌스폼을 줌으로 가운데로 올수있다.*/
+
+p.desc {
+  width: 1150px;
+  text-align: center;
+  margin: 0 auto;
+  color: #a8a8a8;
+  font-size: 12px;
+  font-family: "Roboto";
+} /* a8a8a8 roboto  */
+.content {
+  overflow: hidden;
+  position: relative;
+  width: 1300px;
+  margin: 0 auto;
+  padding: 50px 25px 80px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.content > div {
+  float: left; /*이걸 하고나서 콘텐트 부분 다 정렬됨*/
+}
+/* .클래스 > 자식클래스 로 모두 명할수있음*/
+/* Section */
+.section1 .content {
+  padding: 45px 25px 75px;
+}
+.section1 .content > div {
+  width: 250px;
+  height: 300px;
+  padding: 40px 25px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.itm-ico {
+  width: 125px;
+  height: 115px;
+  display: block;
+  margin: 0 auto 30px;
+  background: url("../img/icoSet.png") no-repeat;
+  text-indent: -999999px;
+  color: transparent;
+}
+.itm-ico2 {
+  float: left;
+  width: 58px;
+  height: 27px;
+  display: block;
+  margin-top: 80px;
+  margin-left: 15px;
+  background: url("../img/icoSet.png") no-repeat;
+  text-indent: -999999px;
+  color: transparent;
+}
+.itm1 .itm-ico {
+  background-position: 0 -50px;
+}
+.itm1 .itm-ico:hover {
+  background-position: 0 -170px;
+}
+.arrow .itm-ico2 {
+  background-position: -225px -320px;
+}
+.arrow .itm-ico2:hover {
+  background-position: -282px -320px;
+}
+.itm2 .itm-ico {
+  background-position: -375px -50px;
+}
+.itm2 .itm-ico:hover {
+  background-position: -375px -170px;
+}
+.itm3 .itm-ico {
+  background-position: -125px -50px;
+}
+.itm3 .itm-ico:hover {
+  background-position: -125px -170px;
+}
+.itm4 .itm-ico {
+  background-position: -250px -50px;
+}
+.itm4 .itm-ico:hover {
+  background-position: -250px -170px;
+}
+
+.section1 dl {
+  font-family: "NanumSquare";
+  text-align: center;
+}
+.section1 dt a {
+  display: block;
+  height: 35px;
+  color: #5293f4;
+  font-size: 17px;
+  font-weight: 800;
+  text-decoration: none;
+} /*데코는 a 태그 밑줄 없애줌*/
+.section1 dt a:hover {
+  color: #ff2828;
+  font-size: 18px;
+}
+
+.section1 dd {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* section 2 */
+.section2 .content {
+  padding-bottom: 41px;
+}
+.cont-left {
+  width: 446px;
+  margin-right: 40px;
+}
+.cont-right {
+  width: calc(100% - 486px);
+}
+.thumb-list {
+  overflow: hidden;
+  margin-bottom: 30px;
+  clear: both;
+}
+.thumb-list:nth-child(2) {
+  margin-bottom: 25px;
+}
+.thumb-lg,
+.thumb-md {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.thumb-lg {
+  width: 446px;
+  height: 263px;
+}
+.thumb-md {
+  width: 204px;
+  height: 115px;
+  margin-right: 30px;
+}
+.thumb-list a,
+.thumb-list dl {
+  float: left;
+}
+.thumb-list dl {
+  width: calc(100% - 234px);
+}
+
+.favorite-group {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0.6);
+  box-sizing: border-box;
+  line-height: 1.1;
+}
+.favorite-group span {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  font-family: "Roboto";
+  font-size: 20px;
+  text-align: center;
+}
+.favorite-group .favorite {
+  font-size: 24px;
+}
+.thumb-md .favorite-group {
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  padding: 8px 7px;
+}
+.thumb-md .favorite-group span {
+  font-size: 13px;
+}
+.thumb-md .favorite-group .favorite {
+  font-size: 16px;
+}
+
+.txt-line2,
+.txt-line3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.txt-line2 {
+  -webkit-line-clamp: 2;
+}
+.cont-left dd.txt-line2 {
+  color: #707070;
+}
+.txt-line3 {
+  -webkit-line-clamp: 3;
+  color: #707070;
+  line-height: 20px;
+}
+.cont-left dt.title a {
+  margin-top: 10px;
+}
+
+/* .block_txt {
+  overflow: hidden;
+  position: relative;
+  padding-right: lem;
+  margin: 0;
+  text-align: justify;
+}
+.block_txt::before {
+  content: "...";
+  position: absolute;
+  right: 2px;
+  bottom: 1px;
+}
+.block_txt::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: #fff;
+}
+.txt-line2_lg,
+.txt_line2_sm {
+  max-height: 3em;
+}
+.txt-line3_sm {
+  max-height: 4.5em;
+} */
+
+.section2 dt.title {
+  height: 24px;
+  font-size: 16px;
+  font-family: "NotoSansR";
+  font-weight: 900;
+  color: #333;
+  -webkit-line-clamp: 1;
+}
+.cont-left .title a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+.section2 .name,
+.section2 dd.desc {
+  font-size: 12px;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.section2 .name {
+  display: inline-block;
+  height: 35px;
+  font-size: 12px;
+  margin-top: 10px;
+  color: #999;
+}
+.section2 dd.desc {
+  color: #707070;
+}
+
+.btn-more {
+  display: block;
+  width: 135px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: #e5e5e5;
+  font-size: 14px;
+  font-family: "Roboto";
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.btn-more:hover {
+  background-color: #8792ff;
+  color: #fff;
+}
+
+footer {
+  height: 60px;
+  background-color: #739ad4;
+  box-sizing: border-box;
+}
+.cpr {
+  width: 1140px;
+  margin: 0 auto;
+  font-size: 13px;
+  color: #fff;
+  line-height: 30px;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+/*Section3*/
+.section3 {
+  overflow: hidden;
+  background-color: #ebf3fff8;
+}
+.section3 .slider2 {
+  width: 1150px;
+}
+.section3 .content {
+  width: 1220px;
+  padding: 0 26px;
+  margin: 35px auto;
+}
+
+.slide-inner2 .slide-area > div {
+  float: left;
+  display: block;
+  width: 100%;
+}
+.section3 .jd-slider .slide-inner2 .slide-area > li {
+  float: left;
+  display: none;
+  width: 262px;
+  height: 350px;
+  margin: 15px;
+}
+.section3 .jd-slider .slide-inner2 .slide-area > li > div > a {
+  display: block;
+  height: inherit;
+  box-sizing: border-box;
+  border-radius: 3px;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+  /* 위드 : 인해리트, 해이트 : 인해리트 으로도 카드 이미지랑 박스 벌어진공간 좁힐수있음 */
+}
+
+.section3 .jd-slider .slide-inner2 .slide-area > li > div > a:hover {
+  text-decoration: none;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
+}
+.card-txt {
+  height: 90px;
+  padding: 20px 20px 30px;
+  margin-top: -5px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.card-txt > div {
+  display: inline-block;
+}
+.card-ico {
+  float: left;
+  display: inline-block;
+  background: url("../img/icoSet.png");
+  background-position: 11px -309px;
+  width: 40px;
+  height: 40px;
+  background-color: #5293f4;
+  border-radius: 2px;
+}
+.card-ico:hover {
+  display: inline-block;
+  background-color: red;
+}
+.card-ico:active {
+  display: inline-block;
+  background: url("../img/icoSet.png");
+  background-position: -19px -309px;
+  width: 40px;
+  height: 40px;
+  background-color: #f1ff2c;
+  border-radius: 2px;
+}
+.txt-group {
+  width: calc(100% - 60px);
+  margin-left: 15px;
+  vertical-align: top;
+  font-family: "NotoSansKR";
+}
+.project {
+  height: 25px;
+  color: #202020;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 900;
+} /*택스트 오버플로우: 고장나면 올려 , nowrap 은 한줄로 ...처리*/
+.category {
+  color: #999;
+  font-size: 11px;
+  font-weight: 400;
+}
+.content .btn1-control,
+.content .controller {
+  float: none;
+  text-align: center;
+}
+.controller2 {
+  margin-top: 350px;
+}
